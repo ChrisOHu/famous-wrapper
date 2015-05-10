@@ -1,9 +1,8 @@
 <template name="atFamousForm">
   {{#unless hide}}
-    {{#ContainerSurface size="[undefined, undefined]" class="at-form"}}
-      {{#SequentialLayout size="[undefined, true]"}}
+      {{#SequentialLayout size="[undefined, undefined]"}}
         {{#famousIf showTitle}}
-          {{#Surface size="[undefined, true]" modifier="StateModifier"}}
+          {{#Surface size="[undefined, true]"}}
             {{> atTitle}}
           {{/Surface}}
         {{/famousIf}}
@@ -11,51 +10,50 @@
           {{> atOauth}}
         {{/famousIf}}
         {{#famousIf showServicesSeparator}}
-          {{#Surface size="[undefined, true]" modifier="StateModifier"}}
+          {{#Surface size="[undefined, true]"}}
             {{> atSep}}
           {{/Surface}}
         {{/famousIf}}
         {{#famousIf showError}}
-          {{#Surface size="[undefined, true]" modifier="StateModifier"}}
+          {{#Surface size="[undefined, true]"}}
             {{> atError}}
           {{/Surface}}
         {{/famousIf}}
         {{#famousIf showResult}}
-          {{#Surface size="[undefined, true]" modifier="StateModifier"}}
+          {{#Surface size="[undefined, true]"}}
             {{> atResult}}
           {{/Surface}}
         {{/famousIf}}
         {{#famousIf showMessage}}
-          {{#Surface size="[undefined, true]" modifier="StateModifier"}}
+          {{#Surface size="[undefined, true]"}}
             {{> atMessage}}
           {{/Surface}}
         {{/famousIf}}
         {{#famousIf showPwdForm}}
-          {{#Surface size="[undefined, true]" modifier="StateModifier"}}
+          {{#Surface size="[undefined, true]"}}
             {{> atPwdForm}}
           {{/Surface}}
         {{/famousIf}}
         {{#famousIf showSignInLink}}
-          {{#Surface size="[undefined, true]" modifier="StateModifier"}}
+          {{#Surface size="[undefined, true]"}}
             {{> atSigninLink}}
           {{/Surface}}
         {{/famousIf}}
         {{#famousIf showSignUpLink}}
-          {{#Surface size="[undefined, true]" modifier="StateModifier"}}
+          {{#Surface size="[undefined, true]"}}
             {{> atSignupLink}}
           {{/Surface}}
         {{/famousIf}}
         {{#famousIf showTermsLink}}
-          {{#Surface size="[undefined, true]" modifier="StateModifier"}}
+          {{#Surface size="[undefined, true]"}}
             {{> atTermsLink}}
           {{/Surface}}
         {{/famousIf}}
         {{#famousIf showResendVerificationEmailLink}}
-          {{#Surface size="[undefined, true]" modifier="StateModifier"}}
+          {{#Surface size="[undefined, true]"}}
             {{> atResendVerificationEmailLink}}
           {{/Surface}}
         {{/famousIf}}
       {{/SequentialLayout}}
-    {{/ContainerSurface}}
   {{/unless}}
 </template>
