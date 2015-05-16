@@ -51,6 +51,8 @@ Package.on_use(function(api, where) {
   api.add_files([
     'lib/at_famous_form.html',
     'lib/at_famous_form.js',
+    'lib/at_famous_pwd_link.html',
+    'lib/at_famous_pwd_link.js',
     'lib/at_famous_oauth.html',
     'lib/at_famous_oauth.js',
     'lib/at_pwd_form_btn.js',
