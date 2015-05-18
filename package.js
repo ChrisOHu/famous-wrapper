@@ -18,6 +18,7 @@ Package.on_use(function(api, where) {
     'underscore',
     'useraccounts:core',
     'gadicohen:famous-views',
+    'gadicohen:fview-flex',
     'aldeed:template-extension'
   ], ['client', 'server']);
 
