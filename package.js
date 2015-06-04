@@ -1,6 +1,6 @@
 Package.describe({
   summary: 'Famo.us wrapper for Accounts Templates.',
-  version: '1.9.1',
+  version: '1.11.1',
   name: 'useraccounts:famous-wrapper',
   git: 'https://github.com/meteor-useraccounts/famous-wrapper.git',
 });
@@ -23,17 +23,17 @@ Package.on_use(function(api, where) {
   ], ['client', 'server']);
 
   api.imply([
-    'useraccounts:core@1.9.1',
+    'useraccounts:core@1.11.1',
     'gadicohen:famous-views@0.1.22',
     'aldeed:template-extension@3.1.1',
   ], ['client', 'server']);
 
   //api.use('mjnetworks:famous@0.2.2-1', ['client']/*, { weak: true }*/);
 
-  api.use('useraccounts:bootstrap@1.9.1', ['client', 'server'], {
+  api.use('useraccounts:bootstrap@1.11.1', ['client', 'server'], {
     weak: true
   });
-  api.use('useraccounts:foundation@1.9.1', ['client', 'server'], {
+  api.use('useraccounts:foundation@1.11.1', ['client', 'server'], {
     weak: true
   });
   api.use('useraccounts:ionic@1.8.1', ['client', 'server'], {
@@ -42,10 +42,10 @@ Package.on_use(function(api, where) {
   api.use('useraccounts:ratchet@1.8.1', ['client', 'server'], {
     weak: true
   });
-  api.use('useraccounts:semantic-ui@1.9.1', ['client', 'server'], {
+  api.use('useraccounts:semantic-ui@1.11.1', ['client', 'server'], {
     weak: true
   });
-  api.use('useraccounts:unstyled@1.9.1', ['client', 'server'], {
+  api.use('useraccounts:unstyled@1.11.1', ['client', 'server'], {
     weak: true
   });
 
@@ -72,7 +72,7 @@ Package.on_use(function(api, where) {
 
 Package.on_test(function(api) {
   api.use([
-    'useraccounts:core@1.9.1',
+    'useraccounts:core@1.11.1',
   ]);
   api.use(['tinytest', 'test-helpers'], ['client', 'server']);
   api.add_files('tests/tests.js', ['client', 'server']);
